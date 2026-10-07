@@ -349,7 +349,8 @@ section{position:relative}
 @keyframes marquee{to{transform:translate3d(-50%,0,0)}}
 .mq-item{display:inline-flex;align-items:center;font:600 clamp(20px,2vw,30px)/1 var(--f-display);letter-spacing:-.01em;white-space:nowrap}
 .mq-item:nth-child(even){font-weight:200}
-.mq-star{color:var(--line-strong);margin:0 28px;font-size:.9em}
+.mq-star{display:inline-flex;color:var(--line-strong);margin:0 28px;font-weight:400}
+.mq-star svg{width:.72em;height:.72em;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round}
 
 /* ---------- S3 statement ---------- */
 .statement{padding:clamp(120px,18vh,220px) 0}

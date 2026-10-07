@@ -467,7 +467,9 @@
     const names = ['CREALOGIX AG', 'DIGITERRA', 'Kühne+Nagel', 'Fiducia & GAD', 'Pascher+Heinz', 'Bundesagentur für Arbeit', 'Capgemini', 'BMW', 'Mercedes-Benz', 'antoni', 'Weleda'];
     const track = $('.marquee-track');
     const half = mk('div'); half.style.display = 'flex';
-    const addSet = () => names.forEach(n => { const it = mk('span', 'mq-item', n); it.append(mk('span', 'mq-star', '✳')); half.append(it); });
+    // the separator is drawn, not typed: iOS shows the ✳ character as a green emoji
+    const STAR = '<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 2v16M2 10h16M4.3 4.3l11.4 11.4M15.7 4.3L4.3 15.7"/></svg>';
+    const addSet = () => names.forEach(n => { const it = mk('span', 'mq-item', n); const st = mk('span', 'mq-star'); st.innerHTML = STAR; it.append(st); half.append(it); });
     addSet(); track.append(half);
     let guard = 0;
     while (half.scrollWidth < 2600 && guard++ < 6) addSet();
