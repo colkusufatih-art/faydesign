@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="de" data-hero="tinte" data-bytes="8835289" data-bytes-m="5605607">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Fatih Cölkusu · Head of Design, UX/UI &amp; Designsysteme, Zürich</title>
+<meta name="description" content="Fatih Cölkusu, Head of Design aus Zürich. Über 15 Jahre UX/UI, Designsysteme und Barrierefreiheit für Banking, Logistik und öffentlichen Sektor. Frei ab Januar 2027.">
+<meta name="theme-color" content="#E7E4E0">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Fatih Cölkusu · Design, das man bauen kann">
+<meta property="og:description" content="Head of Design aus Zürich. UX/UI, Designsysteme und saubere Übergaben an die Entwicklung. Frei ab Januar 2027.">
+<meta property="og:image" content="https://www.faydesign.ch/assets/og-image.jpg">
+<meta property="og:url" content="https://www.faydesign.ch/">
+<link rel="canonical" href="https://www.faydesign.ch/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23151413'/%3E%3Ctext x='32' y='42' font-family='Arial,Helvetica,sans-serif' font-weight='700' font-size='26' text-anchor='middle' fill='%23E7E4E0'%3EFay%3C/text%3E%3C/svg%3E">
+<!-- fonts are self-hosted: no request to Google or any other third party -->
+<link rel="preload" href="assets/fonts/outfit-var-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/instrument-sans-var-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/fonts.css?v=20261008a">
+<script>(function(){var d=document.documentElement,t=null;d.classList.add('js');try{t=localStorage.getItem('theme')}catch(e){}if(t!=='dark'&&t!=='light'){t=window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}d.setAttribute('data-theme',t)})()</script>
+<link rel="stylesheet" href="assets/css/site.css?v=20261008a">
+</head>
+<body>
+<a class="skip" href="#main" data-i18n="skip">Zum Inhalt springen</a>
+
+<!-- the one environment: canvas, grid, drifting light, grain -->
+<div class="env" aria-hidden="true">
+  <div class="env-light"></div>
+  <div class="env-grid"></div>
+  <div class="env-grain"></div>
+</div>
+
+<header class="nav" id="nav">
+  <a class="brand" href="#top" aria-label="Fatih Cölkusu, zum Anfang">
+    <svg class="brand-mark" viewBox="0 0 56 28" aria-hidden="true"><rect width="56" height="28" rx="4"/><text x="28" y="20" text-anchor="middle">Fay</text></svg>
+    <span class="brand-name">Fatih Cölkusu</span>
+  </a>
+  <nav class="nav-links" aria-label="Hauptnavigation" data-i18n-attr="aria-label:navLabel">
+    <a href="#work" data-i18n="navWork">Arbeiten</a>
+    <a href="#process" data-i18n="navProcess">Arbeitsweise</a>
+    <a href="#about" data-i18n="navAbout">Über mich</a>
+    <a href="#contact" data-i18n="navContact">Kontakt</a>
+  </nav>
+  <div class="nav-right">
+    <div class="lang" role="group" aria-label="Sprache" data-i18n-attr="aria-label:langLabel">
+      <button type="button" class="lang-btn" data-lang="de" aria-pressed="true">DE</button>
+      <span aria-hidden="true">/</span>
+      <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+    <button type="button" class="theme-btn" aria-pressed="false" aria-label="Dunkelmodus einschalten"><svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.6A8.2 8.2 0 0 1 9.4 4a8.2 8.2 0 1 0 10.6 10.6z"/></svg><svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/></svg></button>
+    <a class="btn btn-accent nav-cta" href="#contact" data-i18n="ctaTalk">Gespräch anfragen</a>
+    <button type="button" class="menu-btn" aria-expanded="false" aria-controls="menu" aria-label="Menü öffnen" data-i18n-attr="aria-label:menuOpen"><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="menu" id="menu" hidden>
+  <nav aria-label="Mobile Navigation">
+    <a href="#work" data-i18n="navWork">Arbeiten</a>
+    <a href="#process" data-i18n="navProcess">Arbeitsweise</a>
+    <a href="#about" data-i18n="navAbout">Über mich</a>
+    <a href="#contact" data-i18n="navContact">Kontakt</a>
+  </nav>
+</div>
+
+<main id="main" tabindex="-1">
+
+<!-- ============ HERO: the scroll journey ============ -->
+<section class="hero" id="top" aria-label="Einleitung" data-i18n-attr="aria-label:heroLabel">
+  <div class="stage" id="stage">
+    <div class="poster" aria-hidden="true"></div>
+    <video id="hero-video" muted playsinline preload="none" aria-hidden="true" tabindex="-1"></video>
+    <div class="scrim-base" aria-hidden="true"></div>
+    <div class="stage-fade" aria-hidden="true"></div>
+
+    <div class="band b1" data-a="0" data-b="0.16" data-fx="focus">
+      <p class="kicker mono" data-i18n="h1k">Head of Design · UX/UI &amp; KI · Zürich</p>
+      <p class="hl hl-hello" data-split="focus" data-i18n="h1t">Hoi.</p>
+      <p class="sub" data-split="rise" data-i18n="h1s">Ich bin Fay. Ich mache komplexe Produkte einfach.</p>
+    </div>
+
+    <div class="band b2" data-a="0.20" data-b="0.37" data-fx="drift">
+      <p class="hl hl-caps" data-split="drift" data-i18n="t2t">Jede Idee beginnt mit einem Strich.</p>
+      <p class="triplet" data-split="layers-lines" data-i18n="t2s">Skizze. Struktur. System.</p>
+    </div>
+
+    <div class="band b3" data-a="0.41" data-b="0.57" data-fx="scatter">
+      <p class="hl hl-wide" data-split="scatter" data-i18n="t3t">Ich gebe ihr Form, bis alles klar ist.</p>
+    </div>
+
+    <div class="band b4" data-a="0.61" data-b="0.77" data-fx="punch">
+      <p class="hl hl-caps hl-stack" data-split="punch" data-i18n="h4t">Banking. Logistik. Automotive. Öffentlicher Sektor.</p>
+      <p class="sub sub-small" data-split="rise" data-i18n="h4s">Für CREALOGIX&nbsp;AG &amp; DIGITERRA, Kühne+Nagel, BMW&nbsp;Digital, Mercedes-Benz und die Fiducia&nbsp;&amp;&nbsp;GAD.</p>
+    </div>
+
+    <div class="band b5" data-a="0.82" data-b="1" data-fx="settle" data-ramp="0.06">
+      <p class="hl hl-settle" data-split="settle" data-i18n="h5t">Vom ersten Strich bis in den Code.</p>
+      <p class="sub settle-sub" data-i18n="h5s">Ich gestalte Designsysteme und Interfaces und baue Frontends selbst.</p>
+      <div class="cta-row settle-cta">
+        <a class="btn btn-ghost" href="#work" data-i18n="ctaWork">Arbeiten ansehen</a>
+        <a class="btn btn-accent" href="#contact" data-i18n="ctaTalk">Gespräch anfragen</a>
+      </div>
+    </div>
+
+    <img class="settle-portrait" src="assets/portrait.webp" width="1200" height="1500" alt="" aria-hidden="true" decoding="async">
+
+    <div class="hud chip mono" aria-hidden="true">
+      <span class="hud-label" data-i18n="hudDepth">Tiefe</span>
+      <span class="hud-num" id="hud-num">01</span><span class="hud-of">/ 05</span>
+      <span class="hud-ticks"><i></i><i></i><i></i><i></i><i></i></span>
+    </div>
+
+    <div class="loader" aria-hidden="true">
+      <svg class="ring" viewBox="0 0 48 48"><circle cx="24" cy="24" r="20" class="ring-track"/><circle cx="24" cy="24" r="20" class="ring-fill"/></svg>
+      <span class="loader-label mono" data-i18n="scroll">Scrollen</span>
+    </div>
+  </div>
+
+  <!-- static hero: landscape phones, reduced motion -->
+  <div class="hero-static">
+    <img class="hs-portrait" src="assets/portrait.webp" width="1200" height="1500" alt="" aria-hidden="true" loading="lazy" decoding="async">
+    <div class="hs-inner">
+      <p class="kicker mono" data-i18n="h1k">Head of Design · UX/UI &amp; KI · Zürich</p>
+      <p class="hs-title"><span class="hs-hello" data-i18n="hsHello">Hoi.</span> <span data-i18n="hsName">Ich bin Fay.</span></p>
+      <p class="sub" data-i18n="hsSub">Ich mache komplexe Produkte einfach. Und baubar.</p>
+      <div class="cta-row">
+        <a class="btn btn-ghost" href="#work" data-i18n="ctaWork">Arbeiten ansehen</a>
+        <a class="btn btn-accent" href="#contact" data-i18n="ctaTalk">Gespräch anfragen</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ S1 INTRO ============ -->
+<section class="intro" id="intro" aria-labelledby="intro-name">
+  <div class="wrap intro-wrap">
+    <p class="label mono reveal"><span class="label-idx">00</span><span data-i18n="introLabel">Profil</span></p>
+    <h1 class="name" id="intro-name"><span class="name-line">FATIH</span><span class="name-line">CÖLKUSU</span></h1>
+    <div class="intro-row">
+      <p class="intro-lede reveal" data-i18n="introLede">15+ Jahre Produktdesign. Heute Head of Design bei der CREALOGIX&nbsp;AG in Zürich.</p>
+      <dl class="stats">
+        <div class="stat reveal"><dt><span class="count" data-to="15">15</span><span class="stat-plus">+</span></dt><dd data-i18n="stat1">Jahre Erfahrung</dd></div>
+        <div class="stat reveal"><dt><span class="count" data-to="4">4</span></dt><dd data-i18n="stat2">Branchen: Banking, Logistik, öffentlicher Sektor, Automotive</dd></div>
+        <div class="stat reveal"><dt><span class="count" data-to="3">3</span></dt><dd data-i18n="stat3">Sprachen: Deutsch, Türkisch, Englisch</dd></div>
+      </dl>
+    </div>
+    <svg class="reg reg-spin intro-reg" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="9"/><path d="M20 2v36M2 20h36"/></svg>
+  </div>
+</section>
+
+<!-- ============ S2 MARQUEE ============ -->
+<div class="marquee" aria-label="Marken und Kunden" data-i18n-attr="aria-label:marqueeLabel">
+  <div class="marquee-track" aria-hidden="true"></div>
+  <p class="sr" data-i18n="marqueeSr">CREALOGIX AG, DIGITERRA, Kühne+Nagel, Fiducia &amp; GAD, Pascher+Heinz, Bundesagentur für Arbeit, Capgemini, BMW, Mercedes-Benz, antoni, Weleda</p>
+</div>
+
+<!-- ============ S3 STATEMENT ============ -->
+<section class="statement" id="statement" aria-label="Haltung" data-i18n-attr="aria-label:statementLabel">
+  <div class="wrap">
+    <div class="dim reveal" aria-hidden="true"><svg viewBox="0 0 400 20" preserveAspectRatio="none"><path class="dim-line" d="M1 10H399M1 3v14M399 3v14"/></svg><span class="mono">1440</span></div>
+    <p class="statement-text" data-i18n="statement" data-words>WENIGER KLICKS. KLARERE ABLÄUFE.<br>EIN SYSTEM, DAS MITWÄCHST.<br>FÜR ALLE NUTZBAR.<br>DESIGN UND CODE SPRECHEN DIESELBE SPRACHE.</p>
+  </div>
+</section>
+
+<!-- ============ S4 WORK ============ -->
+<section class="work" id="work" aria-labelledby="work-title">
+  <div class="wrap">
+    <header class="work-head">
+      <div>
+        <p class="label mono reveal"><span class="label-idx">01</span><span data-i18n="workLabel">Ausgewählte Arbeiten</span></p>
+        <h2 class="h2 reveal-lines" id="work-title" data-i18n="workTitle">Komplexe Produkte, klar gemacht.</h2>
+        <p class="work-intro reveal" data-i18n="workIntro">Vier Projekte aus Banking, Logistik und Automotive. Jeweils mit meiner Rolle und meinem Beitrag.</p>
+      </div>
+      <button type="button" class="hold" id="hold" aria-pressed="false">
+        <svg class="hold-ring" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="28" class="hold-track"/><circle cx="32" cy="32" r="28" class="hold-fill"/><path class="hold-icon" d="M22 22h20v20H22zM29 22v20M35 22v20M22 29h20M22 35h20"/></svg>
+        <span class="hold-text"><span class="hold-title" data-i18n="holdTitle">Raster zeigen</span><span class="hold-hint mono" data-i18n="holdHint">Gedrückt halten</span></span>
+      </button>
+    </header>
+
+    <!-- 01 DIGITERRA -->
+    <article class="project p-dt" id="p-digiterra">
+      <div class="p-meta">
+        <p class="p-num mono">01</p>
+        <p class="p-client">CREALOGIX AG · DIGITERRA</p>
+        <h3 class="p-title" data-i18n="p1Title">Eine Banking-App für zwei Marken.</h3>
+        <ul class="tags mono"><li>Banking</li><li data-i18n="tagAppWeb">App &amp; Web</li><li>Head of Design</li></ul>
+        <p class="p-text" data-i18n="p1Text">Bei der CREALOGIX&nbsp;AG habe ich eine hybride Banking-App konzipiert und gestaltet, die von der CREALOGIX&nbsp;AG und DIGITERRA gemeinsam genutzt wird. Ein Designsystem hält Technik und Gestaltung konsistent und lässt jeder Marke trotzdem ihren eigenen Auftritt, mit Dark und Light Mode. Ich habe die Anforderungen aller Beteiligten zusammengeführt und die Zusammenarbeit von Design und Entwicklung koordiniert.</p>
+        <p class="p-extra" data-i18n="p1Extra">Außerdem: das Redesign der DIGITERRA-Website mit scrollbasiertem 3D-Erlebnis, von mir konzipiert und im Frontend umgesetzt.</p>
+      </div>
+      <div class="p-media">
+        <figure class="m m-wide m-photo" data-gl="Hero / Banking">
+          <img src="assets/work/dt-hero.webp" width="2000" height="1334" alt="DIGITERRA Banking auf MacBook und Smartphone: Vermögensübersicht und Wertschriftendetail im Dark Mode" data-i18n-attr="alt:altDtHero" loading="lazy" decoding="async">
+        </figure>
+        <figure class="m m-wide m-device" data-gl="Web / Horizon">
+          <img src="assets/work/dt-web.webp" width="1527" height="906" alt="DIGITERRA Website mit dem Horizon-Hero „Your digital banking channel. Ready for any AI.“ auf dem MacBook" data-i18n-attr="alt:altDtWeb" loading="lazy" decoding="async">
+        </figure>
+        <div class="m-row m-row-2">
+          <figure class="m m-device" data-gl="Desktop / Client Portal"><img src="assets/work/dt-portal.webp" width="1527" height="908" alt="DIGITERRA Client Portal mit Dokumentation, Schnittstellen und Betrieb auf dem MacBook" data-i18n-attr="alt:altDtPortal" loading="lazy" decoding="async"></figure>
+          <figure class="m m-device" data-gl="App / Hybrid"><img src="assets/work/dt-hybrid.webp" width="764" height="640" alt="Hybride DIGITERRA Banking-App auf vier Smartphones: Vermögensübersicht mit Konten, Privatkonto und Portfolio in Dark und Light Mode" data-i18n-attr="alt:altDtHybrid" loading="lazy" decoding="async"></figure>
+        </div>
+      </div>
+    </article>
+
+    <!-- 02 Kühne+Nagel -->
+    <article class="project p-kn flip" id="p-kn">
+      <div class="p-meta">
+        <p class="p-num mono">02</p>
+        <p class="p-client">Kühne+Nagel · myKN</p>
+        <h3 class="p-title" data-i18n="p2Title">Tausende Sendungen. Ein klarer Blick.</h3>
+        <ul class="tags mono"><li data-i18n="tagLogistics">Logistik</li><li data-i18n="tagDeskTab">Desktop &amp; Tablet</li><li>UX Designer</li></ul>
+        <p class="p-text" data-i18n="p2Text">myKN ist die Kundenplattform von Kühne+Nagel für Angebote, Buchungen und Sendungsverfolgung in See- und Luftfracht. Ich habe Tracking-Dashboards gestaltet, Daten visuell aufbereitet, komplexe Prototypen in Figma gebaut, Usability Tests durchgeführt und die Styleguide-Library weiterentwickelt.</p>
+      </div>
+      <div class="p-media">
+        <figure class="m m-wide m-photo" data-gl="Hero / myKN">
+          <img src="assets/work/kn-hero.webp" width="1600" height="730" alt="myKN Container-Übersicht auf einem Convertible-Laptop am Arbeitsplatz" data-i18n-attr="alt:altKnHero" loading="lazy" decoding="async">
+        </figure>
+        <div class="m-row m-row-2">
+          <figure class="m m-device" data-gl="Tablet / Shipment"><img src="assets/work/kn-ipad.webp" width="1200" height="928" alt="myKN Sendungsdetail mit Routing-Meilensteinen und Karte auf dem iPad" data-i18n-attr="alt:altKnShip" loading="lazy" decoding="async"></figure>
+          <figure class="m m-device" data-gl="Desktop / Containers"><img src="assets/work/kn-track.webp" width="1200" height="712" alt="myKN Container-Übersicht mit Dwell-Time-Hotspots auf dem MacBook" data-i18n-attr="alt:altKnTrack" loading="lazy" decoding="async"></figure>
+        </div>
+      </div>
+    </article>
+
+    <!-- 03 Volksbanken -->
+    <article class="project p-vb" id="p-vb">
+      <div class="p-meta">
+        <p class="p-num mono">03</p>
+        <p class="p-client">Fiducia &amp; GAD IT · Volksbanken</p>
+        <h3 class="p-title" data-i18n="p3Title">Die Privatkunden-App der Volksbanken.</h3>
+        <ul class="tags mono"><li>Banking</li><li>App</li><li data-i18n="tagUxExpert">UX/UI Experte</li></ul>
+        <p class="p-text" data-i18n="p3Text">Für die Volksbanken habe ich an der Privatkunden-App gearbeitet: neue Abläufe konzipiert, Prototypen visualisiert und Pattern-Bibliotheken und Styleguide erweitert. Agil im Scrum-Team, Übergabe über GitHub und Sketch Measure.</p>
+      </div>
+      <div class="p-media">
+        <figure class="m m-wide m-photo" data-gl="Hero / Website">
+          <img src="assets/work/vb-hero.webp" width="2000" height="1334" alt="Volksbank Website mit dem Claim „Morgen kann kommen.“ auf einem MacBook" data-i18n-attr="alt:altVbHero" loading="lazy" decoding="async">
+        </figure>
+        <div class="m-row m-row-2">
+          <figure class="m m-device" data-gl="App / Screens"><img src="assets/work/vb-app.webp" width="1014" height="954" alt="Acht Screens der Volksbank App: Startbildschirm, Banking &amp; Verträge, Kontoauswahl, Überweisung, Aufträge, Bankpostfach, Profildaten und Website" data-i18n-attr="alt:altVbApp" loading="lazy" decoding="async"></figure>
+          <figure class="m m-device" data-gl="Tablet / Cockpit"><img src="assets/work/vb-cockpit.webp" width="1115" height="1477" alt="Banking &amp; Finanzen Cockpit auf dem iPad: aktivierte Apps mit Anbietern, Kundengruppen und Performance" data-i18n-attr="alt:altVbCockpit" loading="lazy" decoding="async"></figure>
+        </div>
+      </div>
+    </article>
+
+    <!-- 04 BMW -->
+    <article class="project p-bmw flip" id="p-bmw">
+      <div class="p-meta">
+        <p class="p-num mono">04</p>
+        <p class="p-client">BMW Digital</p>
+        <h3 class="p-title" data-i18n="p4Title">Vom Showroom bis zum Need Analyser.</h3>
+        <ul class="tags mono"><li>Automotive</li><li>Web</li><li>UX/UI</li></ul>
+        <p class="p-text" data-i18n="p4Text">Für BMW habe ich Showroom-Seiten konzipiert, das UI für BMW M gestaltet und eine neue Anwendung entworfen, die Kunden zum passenden Fahrzeug führt. Dazu kamen Bemaßungen für das Frontend und die Qualitätssicherung nach BMW Styleguide.</p>
+      </div>
+      <div class="p-media">
+        <figure class="m m-wide" data-gl="Step / My Values">
+          <img src="assets/work/bmw-hero.webp" width="1500" height="1052" alt="BMW Need Analyser: Schritt „What’s important to you?“ mit Auswahl von Eigenschaften auf dem MacBook" data-i18n-attr="alt:altBmwHero" loading="lazy" decoding="async">
+        </figure>
+        <div class="m-row m-row-2">
+          <figure class="m" data-gl="Result / Match"><img src="assets/work/bmw-x6.webp" width="1500" height="1052" alt="BMW Need Analyser: Fahrzeugempfehlung BMW X6 auf dem MacBook" data-i18n-attr="alt:altBmwX6" loading="lazy" decoding="async"></figure>
+          <figure class="m" data-gl="Mobile / Wizard"><img src="assets/work/bmw-mobile.webp" width="928" height="1194" alt="BMW Need Analyser auf zwei Smartphones: Sitzplatzauswahl und Empfehlung" data-i18n-attr="alt:altBmwMob" loading="lazy" decoding="async"></figure>
+        </div>
+        <figure class="m m-wide" data-gl="UI / BMW M">
+          <img src="assets/work/bmw-m.webp" width="1500" height="1052" alt="BMW M Website mit dem M4 GTS auf dem MacBook" data-i18n-attr="alt:altBmwM" loading="lazy" decoding="async">
+        </figure>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ============ S5 PROCESS ============ -->
+<section class="process" id="process" aria-labelledby="process-title">
+  <div class="wrap">
+    <p class="label mono reveal"><span class="label-idx">02</span><span data-i18n="processLabel">Arbeitsweise</span></p>
+    <div class="process-head">
+      <h2 class="h2 reveal-lines" id="process-title" data-i18n="processTitle">Vier Schritte. Keine Überraschungen.</h2>
+      <p class="process-iso mono reveal" data-i18n="processIso">Nutzerzentriert nach ISO 9241-210</p>
+    </div>
+    <div class="flow" aria-hidden="true"><svg viewBox="0 0 1000 20" preserveAspectRatio="none"><path class="flow-line" d="M0 10H1000"/><path class="flow-dash" d="M0 10H1000"/></svg></div>
+    <ol class="steps">
+      <li class="step reveal">
+        <svg class="step-art draw" viewBox="0 0 120 120" aria-hidden="true"><circle cx="52" cy="52" r="30"/><path d="M74 74l26 26"/><path d="M40 52h24M52 40v24"/></svg>
+        <p class="step-num mono">01</p>
+        <h3 class="step-title" data-i18n="s1Title">Verstehen</h3>
+        <p class="step-text" data-i18n="s1Text">Ich frage nach Zielen, Nutzern und Grenzen, bevor ich zeichne.</p>
+      </li>
+      <li class="step reveal">
+        <svg class="step-art draw" viewBox="0 0 120 120" aria-hidden="true"><rect x="10" y="14" width="30" height="20" rx="3"/><rect x="80" y="14" width="30" height="20" rx="3"/><rect x="45" y="86" width="30" height="20" rx="3"/><path d="M40 24h40M25 34v26h70V34M60 60v26"/></svg>
+        <p class="step-num mono">02</p>
+        <h3 class="step-title" data-i18n="s2Title">Strukturieren</h3>
+        <p class="step-text" data-i18n="s2Text">User Flows, Informationsarchitektur und Wireframes. Hier wird es einfach.</p>
+      </li>
+      <li class="step reveal">
+        <svg class="step-art draw" viewBox="0 0 120 120" aria-hidden="true"><rect x="34" y="8" width="52" height="104" rx="9"/><path d="M50 16h20"/><rect x="42" y="28" width="36" height="22" rx="3"/><path d="M42 60h36M42 70h26M42 80h30"/><rect x="42" y="92" width="36" height="10" rx="5"/></svg>
+        <p class="step-num mono">03</p>
+        <h3 class="step-title" data-i18n="s3Title">Gestalten</h3>
+        <p class="step-text" data-i18n="s3Text">UI und klickbare Prototypen in Figma, getestet mit echten Nutzern und barrierefrei nach WCAG 2.1 AA.</p>
+      </li>
+      <li class="step reveal">
+        <svg class="step-art draw" viewBox="0 0 120 120" aria-hidden="true"><path d="M34 30L10 60l24 30M86 30l24 30-24 30"/><rect x="44" y="44" width="32" height="32" rx="4"/><path d="M44 56h32M56 44v32"/></svg>
+        <p class="step-num mono">04</p>
+        <h3 class="step-title" data-i18n="s4Title">Übergeben</h3>
+        <p class="step-text" data-i18n="s4Text">Komponenten, Design Tokens und Specs, die die Entwicklung versteht. Frontends baue ich auch selbst.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ S6 SERVICES ============ -->
+<section class="services" id="services" aria-labelledby="services-title">
+  <div class="wrap">
+    <div class="services-head">
+      <p class="label mono reveal"><span class="label-idx">03</span><span data-i18n="servicesLabel">Leistungen</span></p>
+      <h2 class="h2 reveal-lines" id="services-title" data-i18n="servicesTitle">Was ich mitbringe.</h2>
+    </div>
+    <ul class="svc-list">
+      <li class="svc reveal"><span class="svc-num mono">01</span><h3 class="svc-name">UX/UI Design</h3><p class="svc-text" data-i18n="sv1">Apps und Plattformen für Web, iOS und Android.</p></li>
+      <li class="svc reveal"><span class="svc-num mono">02</span><h3 class="svc-name" data-i18n="sv2n">Designsysteme</h3><p class="svc-text" data-i18n="sv2">Komponenten, Tokens und Doku, die mit dem Produkt wachsen.</p></li>
+      <li class="svc reveal"><span class="svc-num mono">03</span><h3 class="svc-name">Prototyping &amp; Usability Tests</h3><p class="svc-text" data-i18n="sv3">Klickbare Prototypen in Figma und Tests, die echte Antworten liefern.</p></li>
+      <li class="svc reveal"><span class="svc-num mono">04</span><h3 class="svc-name" data-i18n="sv4n">Barrierefreiheit</h3><p class="svc-text" data-i18n="sv4">WCAG 2.1 AA, BITV 2.0 und WAI-ARIA, von Anfang an mitgedacht.</p></li>
+      <li class="svc reveal"><span class="svc-num mono">05</span><h3 class="svc-name" data-i18n="sv5n">KI &amp; Frontend</h3><p class="svc-text" data-i18n="sv5">Frontends mit Cursor und Claude, Design Tokens und Komponenten-Bibliotheken.</p></li>
+      <li class="svc reveal"><span class="svc-num mono">06</span><h3 class="svc-name">Art Direction</h3><p class="svc-text" data-i18n="sv6">Kampagnen und Content für Marken wie Mercedes-Benz und BMW.</p></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ S7 QUOTES ============ -->
+<section class="quotes" id="quotes" aria-labelledby="quotes-title">
+  <div class="quotes-sticky">
+    <div class="wrap quotes-inner">
+      <p class="label mono"><span class="label-idx">04</span><span id="quotes-title" data-i18n="quotesLabel">Was die CREALOGIX AG sagt</span></p>
+      <div class="q-mark" aria-hidden="true">“</div>
+      <div class="q-stack">
+        <blockquote class="q" data-q="0"><p data-i18n="q1">Sein Engagement übertrifft unsere Erwartungen.</p></blockquote>
+        <blockquote class="q" data-q="1"><p data-i18n="q2">Er setzt erworbenes Wissen vorbildlich in die Praxis um und findet sich in neuen Aufgaben schnell zurecht.</p></blockquote>
+        <blockquote class="q" data-q="2"><p data-i18n="q3">Mit seiner äusserst zuverlässigen und genauen Arbeitsweise sind wir vollumfänglich zufrieden.</p></blockquote>
+      </div>
+      <p class="q-src mono" data-i18n="qSrc">CREALOGIX AG, Zwischenzeugnis, September 2026</p>
+      <div class="q-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ S8 ABOUT ============ -->
+<section class="about" id="about" aria-labelledby="about-title">
+  <div class="wrap about-grid">
+    <div class="about-text">
+      <p class="label mono reveal"><span class="label-idx">05</span><span data-i18n="aboutLabel">Über mich</span></p>
+      <h2 class="h2 reveal-lines" id="about-title" data-i18n="aboutTitle">Vom Art Director zum Head of Design.</h2>
+      <p class="reveal" data-i18n="ab1">Ich bin UX/UI- und KI-Designer mit über 15 Jahren Erfahrung. Seit 2023 bin ich bei der CREALOGIX&nbsp;AG in Zürich, heute als Senior Product Designer und Head of Design. Zu meinen Projekten dort gehört die DIGITERRA-Plattform.</p>
+      <p class="reveal" data-i18n="ab2">Angefangen habe ich als Art Director in Werbeagenturen, für Marken wie BMW und Mercedes-Benz. Seitdem gestalte ich digitale Produkte für Fintech, Logistik und öffentliche Institutionen, nutzerzentriert und barrierefrei.</p>
+      <p class="reveal" data-i18n="ab3">Mein Schwerpunkt sind skalierbare Designsysteme. Frontends baue ich mit KI-Werkzeugen wie Cursor und Claude auch selbst. Ich weiß also, wie Designs gebaut werden, und gestalte Übergaben, mit denen Entwickler gern arbeiten.</p>
+      <div class="kits">
+        <div class="kit reveal"><p class="kit-h mono" data-i18n="kitTools">Werkzeuge</p><ul class="chips"><li>Figma</li><li>Sketch</li><li>Adobe CC</li><li>Cursor</li><li>Claude</li><li>ChatGPT</li><li>HTML/CSS</li><li>GitLab</li><li>Design Tokens</li></ul></div>
+        <div class="kit reveal"><p class="kit-h mono" data-i18n="kitMethods">Methoden</p><ul class="chips"><li>Design Thinking</li><li>Service Design</li><li>User Research</li><li>Usability Testing</li><li>Journey Mapping</li><li>Design Sprints</li><li>Scrum</li></ul></div>
+        <div class="kit reveal"><p class="kit-h mono" data-i18n="kitLang">Sprachen</p><p class="kit-p" data-i18n="kitLangText">Deutsch und Türkisch (Muttersprache), Englisch (verhandlungssicher)</p></div>
+      </div>
+    </div>
+    <div class="timeline">
+      <p class="kit-h mono reveal" data-i18n="tlTitle">Stationen</p>
+      <ol class="tl">
+        <li class="tl-item now reveal"><span class="tl-date mono" data-i18n="tl1d">2023 bis heute</span><span class="tl-org">CREALOGIX AG, Zürich</span><span class="tl-role">Senior Product Designer (Head of Design)</span></li>
+        <li class="tl-item reveal"><span class="tl-date mono" data-i18n="tl2d">2021 bis 2023</span><span class="tl-org">Kühne+Nagel, Hamburg</span><span class="tl-role">User Experience Designer</span></li>
+        <li class="tl-item reveal"><span class="tl-date mono" data-i18n="tl3d">2020 bis 2021</span><span class="tl-org" data-i18n="tl3o">Fiducia &amp; GAD IT, München</span><span class="tl-role" data-i18n="tl3r">UX/UI Experte</span></li>
+        <li class="tl-item reveal"><span class="tl-date mono" data-i18n="tl4d">2018 bis 2019</span><span class="tl-org" data-i18n="tl4o">Capgemini für die Bundesagentur für Arbeit, Nürnberg</span><span class="tl-role">Lead UI Designer</span></li>
+        <li class="tl-item reveal"><span class="tl-date mono" data-i18n="tl5d">2016 bis 2017</span><span class="tl-org" data-i18n="tl5o">young&amp;well, München</span><span class="tl-role" data-i18n="tl5r">Senior Art Director (freiberuflich)</span></li>
+        <li class="tl-item reveal"><span class="tl-date mono" data-i18n="tl6d">2012 bis 2015</span><span class="tl-org">7Seas, Pascher+Heinz, antoni Berlin</span><span class="tl-role" data-i18n="tl6r">Graphic Designer &amp; Digital Art Director für BMW, Weleda und Mercedes-Benz</span></li>
+        <li class="tl-item reveal"><span class="tl-date mono" data-i18n="tl7d">bis 2012</span><span class="tl-org" data-i18n="tl7o">Ausbildung Grafik- &amp; Kommunikationsdesign, Istanbul</span></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ============ S9 FAQ ============ -->
+<section class="faq" id="faq" aria-labelledby="faq-title">
+  <div class="wrap faq-grid">
+    <div>
+      <p class="label mono reveal"><span class="label-idx">06</span><span data-i18n="faqLabel">Fragen</span></p>
+      <h2 class="h2 reveal-lines" id="faq-title" data-i18n="faqTitle">Was Recruiter und Kunden mich fragen.</h2>
+    </div>
+    <div class="faq-list">
+      <details class="qa reveal"><summary><span data-i18n="f2q">Suchst du eine Festanstellung oder Projekte?</span><i aria-hidden="true"></i></summary><div class="qa-a"><p data-i18n="f2a">Beides ist möglich. Schreib mir, worum es geht, und ich sage dir ehrlich, ob es passt.</p></div></details>
+      <details class="qa reveal"><summary><span data-i18n="f3q">Kannst du komplexe, regulierte Produkte?</span><i aria-hidden="true"></i></summary><div class="qa-a"><p data-i18n="f3a">Das ist mein Alltag. Banking, Payment und Behörden haben viele Regeln und viele Beteiligte. Ich mache daraus Abläufe, die Nutzer verstehen und die trotzdem alle Vorgaben erfüllen, auch beim Datenschutz.</p></div></details>
+      <details class="qa reveal"><summary><span data-i18n="f4q">Wie läuft die Übergabe an die Entwicklung?</span><i aria-hidden="true"></i></summary><div class="qa-a"><p data-i18n="f4a">Über Komponenten im Designsystem, Design Tokens und klare Specs. Frontends baue ich auch selbst, ich weiß also, was im Code aufwendig wird. Das spart Nacharbeit.</p></div></details>
+      <details class="qa reveal"><summary><span data-i18n="f5q">Wie gehst du mit Barrierefreiheit um?</span><i aria-hidden="true"></i></summary><div class="qa-a"><p data-i18n="f5a">Ich plane sie von Anfang an ein. Für die Bundesagentur für Arbeit habe ich nach BITV 2.0, WCAG und WAI-ARIA gestaltet. Heute ist WCAG 2.1 AA mein Standard.</p></div></details>
+      <details class="qa reveal"><summary><span data-i18n="f6q">Darf ich alle Projekte sehen?</span><i aria-hidden="true"></i></summary><div class="qa-a"><p data-i18n="f6a">Manche Arbeiten stehen unter NDA. Im Gespräch zeige ich gern mehr, soweit es erlaubt ist.</p></div></details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ S10 CONTACT ============ -->
+<section class="contact" id="contact" aria-labelledby="contact-title">
+  <div class="wrap contact-grid">
+    <div class="contact-text">
+      <p class="label mono reveal"><span class="label-idx">07</span><span data-i18n="contactLabel">Kontakt</span></p>
+      <h2 class="contact-title reveal-lines" id="contact-title" data-i18n="contactTitle">Lass uns reden.</h2>
+      <p class="contact-lede reveal" data-i18n="contactLede">Erzähl mir von deiner Rolle, deinem Projekt oder einem Produkt, das einfacher werden soll.</p>
+      <p class="contact-direct reveal"><span data-i18n="contactDirect">Oder direkt:</span> <a href="mailto:info@faydesign.ch">info@faydesign.ch</a></p>
+    </div>
+    <form class="form reveal" id="form" novalidate>
+      <div class="field">
+        <label for="f-name" data-i18n="fName">Name</label>
+        <input id="f-name" name="name" type="text" autocomplete="name" required placeholder="Dein Name" data-i18n-attr="placeholder:fNamePh">
+      </div>
+      <div class="field">
+        <label for="f-mail" data-i18n="fMail">E-Mail</label>
+        <input id="f-mail" name="email" type="email" autocomplete="email" required placeholder="du@firma.com" data-i18n-attr="placeholder:fMailPh">
+      </div>
+      <fieldset class="field topics">
+        <legend data-i18n="fTopic">Anliegen</legend>
+        <label class="topic"><input type="radio" name="topic" value="project" checked><span data-i18n="fT2">Projekt</span></label>
+        <label class="topic"><input type="radio" name="topic" value="coffee"><span data-i18n="fT4">Tasse Kaffee</span></label>
+        <label class="topic"><input type="radio" name="topic" value="other"><span data-i18n="fT3">Etwas anderes</span></label>
+      </fieldset>
+      <div class="field">
+        <label for="f-msg" data-i18n="fMsg">Nachricht</label>
+        <textarea id="f-msg" name="message" rows="5" required placeholder="Worum geht es?" data-i18n-attr="placeholder:fMsgPh"></textarea>
+      </div>
+      <p class="form-error" id="form-error" role="alert" hidden data-i18n="fErr">Bitte fülle Name, E-Mail und Nachricht aus.</p>
+      <button class="btn btn-accent btn-send" type="submit"><span data-i18n="fSend">Nachricht senden</span></button>
+      <p class="form-ok" id="form-ok" role="status" hidden data-i18n="fOk">Danke! Dein E-Mail-Programm öffnet sich mit deiner Nachricht. Du musst nur noch auf Senden klicken.</p>
+    </form>
+  </div>
+
+  <footer class="footer">
+    <div class="wrap footer-grid">
+      <a class="brand brand-foot" href="#top" aria-label="Zum Anfang" data-i18n-attr="aria-label:toTop"><svg class="brand-mark" viewBox="0 0 56 28" aria-hidden="true"><rect width="56" height="28" rx="4"/><text x="28" y="20" text-anchor="middle">Fay</text></svg></a>
+      <p class="foot-who">Fatih Cölkusu · Head of Design · <span data-i18n="city">Zürich</span></p>
+      <div class="foot-theme"><span data-i18n="footTheme">Darstellung</span><button type="button" class="theme-btn" aria-pressed="false" aria-label="Dunkelmodus einschalten"><svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.6A8.2 8.2 0 0 1 9.4 4a8.2 8.2 0 1 0 10.6 10.6z"/></svg><svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/></svg></button></div>
+      <nav class="foot-legal mono" aria-label="Rechtliches" data-i18n-attr="aria-label:footLegal"><a href="impressum.html" data-i18n="footImprint">Impressum</a><a href="datenschutz.html" data-i18n="footPrivacy">Datenschutz</a></nav>
+      <p class="foot-ai mono" data-i18n="footAi">Die 3D-Kamerafahrt ist mit KI erzeugt. Alle Projekte sind echt.</p>
+    </div>
+  </footer>
+</section>
+
+</main>
+
+<!-- cookie notice: informational only, the site sets no cookies and loads nothing from third parties -->
+<aside class="notice" id="notice" aria-label="Hinweis zu Cookies" data-i18n-attr="aria-label:noticeLabel" hidden>
+  <svg class="notice-cup" viewBox="0 0 48 48" aria-hidden="true"><path class="steam" d="M18 15c-2.4-2.6 2.4-4.4 0-7"/><path class="steam" d="M24 15c-2.4-2.6 2.4-4.4 0-7"/><path class="steam" d="M30 15c-2.4-2.6 2.4-4.4 0-7"/><path d="M11 20h25v9a10 10 0 0 1-10 10h-5a10 10 0 0 1-10-10z"/><path d="M36 23h2.5a4.5 4.5 0 0 1 0 9H35"/><path d="M8 43h31"/></svg>
+  <div class="notice-body">
+    <p class="notice-kicker mono" data-i18n="noticeKicker">Cookie-Check</p>
+    <p class="notice-title" data-i18n="noticeTitle">Hier gibt’s keine Cookies. Nur Kaffee.</p>
+    <p class="notice-text" data-i18n="noticeText">Ich tracke dich nicht und setze keine Werbe- oder Analyse-Cookies. Dein Browser merkt sich nur, ob du hell oder dunkel liest und in welcher Sprache.</p>
+    <div class="notice-actions">
+      <button type="button" class="btn btn-accent notice-ok" data-i18n="noticeOk">Alles klar</button>
+      <a class="notice-link" href="datenschutz.html" data-i18n="noticeMore">Zum Datenschutz</a>
+    </div>
+  </div>
+</aside>
+
+<script src="assets/js/site.js?v=20261008a" defer></script>
+</body>
+</html>
