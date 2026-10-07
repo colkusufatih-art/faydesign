@@ -27,7 +27,7 @@
      ========================================================== */
   const EN = {
     metaTitle: 'Fatih Cölkusu · Head of Design, UX/UI & design systems, Zurich',
-    metaDesc: 'Fatih Cölkusu, Head of Design based in Zurich. 15+ years of UX/UI, design systems and accessibility for banking, logistics and the public sector.',
+    metaDesc: 'Fatih Cölkusu, Senior Product Designer based in Zurich. 15+ years of UX/UI, design systems and accessibility for banking, logistics and the public sector.',
     skip: 'Skip to content', navLabel: 'Main navigation', navWork: 'Work', navProcess: 'Process', navAbout: 'About', navContact: 'Contact',
     avail: 'Available from January 2027', langLabel: 'Language', ctaTalk: "Let's talk", menuOpen: 'Open menu', menuClose: 'Close menu',
     heroLabel: 'Introduction',
