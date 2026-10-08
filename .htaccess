@@ -21,6 +21,14 @@
   ExpiresByType image/webp "access plus 1 day"
   ExpiresByType image/jpeg "access plus 1 day"
   ExpiresByType video/mp4 "access plus 1 day"
+  ExpiresByType image/png "access plus 1 day"
+  ExpiresByType image/svg+xml "access plus 1 day"
+  ExpiresByType image/x-icon "access plus 1 day"
+</IfModule>
+
+<IfModule mod_mime.c>
+  AddType application/manifest+json .webmanifest
+  AddType image/x-icon .ico
 </IfModule>
 
 <IfModule mod_headers.c>

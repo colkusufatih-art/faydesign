@@ -1,0 +1,12 @@
+{
+  "name": "Fatih Cölkusu · Fays",
+  "short_name": "Fay",
+  "icons": [
+    { "src": "assets/icons/icon-192.png", "type": "image/png", "sizes": "192x192" },
+    { "src": "assets/icons/icon-512.png", "type": "image/png", "sizes": "512x512" },
+    { "src": "assets/icons/icon-512.png", "type": "image/png", "sizes": "512x512", "purpose": "maskable" }
+  ],
+  "theme_color": "#E7E4E0",
+  "background_color": "#E7E4E0",
+  "display": "browser"
+}
