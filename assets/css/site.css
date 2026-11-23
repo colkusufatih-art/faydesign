@@ -234,6 +234,8 @@ html[data-hero="strich"] .b4::before{background:radial-gradient(ellipse 72% 64% 
 
 /* the opening stroke crosses the upper left, so the first words sit below it */
 html[data-hero="strich"] .b1{top:68%}
+/* the fresh stroke runs right behind the second line, so that band gets a denser veil */
+html[data-hero="strich"] .b2::before{background:radial-gradient(ellipse 76% 68% at 40% 50%,rgba(var(--scrim-rgb),.88) 0%,rgba(var(--scrim-rgb),.7) 50%,rgba(var(--scrim-rgb),0) 82%)}
 
 /* hud + loader */
 .chip{background:var(--hud-bg);border:1px solid var(--line);border-radius:10px}

@@ -17,8 +17,8 @@
   const HERO = html.dataset.hero || 'strich';
   // two cuts of the same journey: landscape for desktops, a portrait crop for phones and portrait tablets
   const VARIANTS = {
-    d: { video: `assets/hero-${HERO}.mp4`, poster: `assets/hero-${HERO}-poster.jpg`, bytes: Number(html.dataset.bytes) || 9741764 },
-    m: { video: `assets/hero-${HERO}-m.mp4`, poster: `assets/hero-${HERO}-poster-m.jpg`, bytes: Number(html.dataset.bytesM) || 4228526 }
+    d: { video: `assets/hero-${HERO}.mp4`, poster: `assets/hero-${HERO}-poster.jpg`, bytes: Number(html.dataset.bytes) || 9828974 },
+    m: { video: `assets/hero-${HERO}-m.mp4`, poster: `assets/hero-${HERO}-poster-m.jpg`, bytes: Number(html.dataset.bytesM) || 4677609 }
   };
   const RM = matchMedia('(prefers-reduced-motion: reduce)');
 
