@@ -185,11 +185,11 @@ main:focus{outline:none}
 .band .hl-wide{max-width:min(100%,10.5em)}
 .b2 .hl-caps{font-size:clamp(36px,4.4vw,78px);max-width:9.6em}
 html[data-hero="ebenen"] .b2::before{background:radial-gradient(ellipse 72% 64% at 38% 50%,rgba(var(--scrim-rgb),.76) 0%,rgba(var(--scrim-rgb),.5) 48%,rgba(var(--scrim-rgb),0) 78%)}
-html[data-hero="tinte"] .b4{width:min(40vw,600px)}
-html[data-hero="tinte"] .b3 .hl-wide{font-size:clamp(34px,4vw,72px)}
+html[data-hero="strich"] .b4{width:min(40vw,600px)}
+html[data-hero="strich"] .b3 .hl-wide{font-size:clamp(34px,4vw,72px)}
 [data-theme="dark"] .b3::before,[data-theme="dark"] .b5::before{background:radial-gradient(ellipse 74% 66% at 40% 50%,rgba(10,10,9,.84) 0%,rgba(10,10,9,.62) 48%,rgba(10,10,9,0) 80%)}
-html[data-hero="tinte"] .b4 .hl-caps{font-size:clamp(34px,3.9vw,70px)}
-html[data-hero="tinte"] .b4::before{background:radial-gradient(ellipse 72% 64% at 36% 50%,rgba(var(--scrim-rgb),.78) 0%,rgba(var(--scrim-rgb),.5) 48%,rgba(var(--scrim-rgb),0) 78%)}
+html[data-hero="strich"] .b4 .hl-caps{font-size:clamp(34px,3.9vw,70px)}
+html[data-hero="strich"] .b4::before{background:radial-gradient(ellipse 72% 64% at 36% 50%,rgba(var(--scrim-rgb),.78) 0%,rgba(var(--scrim-rgb),.5) 48%,rgba(var(--scrim-rgb),0) 78%)}
 .sub{font-size:clamp(18px,1.5vw,22px);line-height:1.45;max-width:30ch;margin-top:14px;color:var(--ink)}
 .sub-small{font-size:clamp(15px,1.15vw,18px);max-width:40ch;color:var(--text-strong)}
 .triplet{margin-top:22px;font:200 clamp(28px,3vw,52px)/1.06 var(--f-display);letter-spacing:-.02em}
@@ -232,9 +232,8 @@ html[data-hero="tinte"] .b4::before{background:radial-gradient(ellipse 72% 64% a
 .b5 .settle-sub{--ks:clamp(0,(var(--k,0) - .62) * 4,1);opacity:var(--ks);transform:translateY(calc((1 - var(--ks)) * 16px))}
 .b5 .settle-cta{--kb:clamp(0,(var(--k,0) - .76) * 5,1);opacity:var(--kb);transform:translateY(calc((1 - var(--kb)) * 16px))}
 
-/* ink variant: the portrait settles into the calm ink */
-.settle-portrait{position:absolute;right:max(4vw,var(--gutter));bottom:0;height:min(88vh,980px);width:auto;max-width:none;pointer-events:none;mix-blend-mode:multiply;
-  opacity:var(--kp,0);transform:translate3d(0,calc((1 - var(--kp,0)) * 36px),0) scale(calc(.97 + .03 * var(--kp,0)));transform-origin:50% 100%}
+/* the opening stroke crosses the upper left, so the first words sit below it */
+html[data-hero="strich"] .b1{top:68%}
 
 /* hud + loader */
 .chip{background:var(--hud-bg);border:1px solid var(--line);border-radius:10px}
@@ -261,46 +260,37 @@ html[data-hero="tinte"] .b4::before{background:radial-gradient(ellipse 72% 64% a
   #hero-video{object-position:50% 50%}
   .scrim-base{background:linear-gradient(to bottom,rgba(var(--scrim-rgb),.72) 0,rgba(var(--scrim-rgb),0) calc(var(--nav-h) + 72px))}
   .band{left:var(--gutter);right:var(--gutter);width:auto;top:auto;bottom:112px;bottom:calc(100lvh - 100svh + 112px);transform:none;z-index:2}
-  html[data-hero] .band::before{inset:-30% calc(-1 * var(--gutter));
+  html[data-hero] .band::before{inset:-30% calc(-1 * var(--gutter));opacity:1;
     background:linear-gradient(to bottom,rgba(var(--scrim-rgb),0) 0%,rgba(var(--scrim-rgb),.86) 18%,rgba(var(--scrim-rgb),.86) 82%,rgba(var(--scrim-rgb),0) 100%)}
   .b3,.b4,.b5{top:calc(var(--nav-h) + 28px);bottom:auto}
-  html[data-hero="tinte"] .b4{width:auto}
+  html[data-hero] .b1{top:auto}
+  html[data-hero="strich"] .b4{width:auto}
   .hl-hello{font-size:clamp(84px,24vw,170px)}
   .b2 .hl-caps{font-size:clamp(32px,8.8vw,64px)}
   .triplet{font-size:clamp(26px,7vw,48px)}
-  html[data-hero="tinte"] .b3 .hl-wide{font-size:clamp(32px,8.8vw,64px)}
-  html[data-hero="tinte"] .b4 .hl-caps{font-size:clamp(30px,8.2vw,60px)}
+  html[data-hero="strich"] .b3 .hl-wide{font-size:clamp(32px,8.8vw,64px)}
+  html[data-hero="strich"] .b4 .hl-caps{font-size:clamp(30px,8.2vw,60px)}
   .hl-settle{font-size:clamp(38px,10.4vw,80px)}
   .sub{font-size:17px}
   .sub-small{font-size:15px}
   .cta-row{margin-top:22px}
-  .settle-portrait{left:50%;right:auto;bottom:0;bottom:calc(100lvh - 100svh);height:min(50svh,640px);z-index:1;
-    transform:translate3d(-50%,calc((1 - var(--kp,0)) * 36px),0) scale(calc(.97 + .03 * var(--kp,0)))}
   .hud{display:none}
   .loader{bottom:22px;bottom:calc(100lvh - 100svh + 22px)}
 }
 
 /* static hero (landscape phones, reduced motion) */
 .hero-static{display:none}
-.hs-portrait{display:none}
 @media (orientation: landscape) and (max-width: 720px), (orientation: landscape) and (pointer: coarse) and (max-height: 560px), (prefers-reduced-motion: reduce){
   .hero{height:auto}
   .stage{display:none}
   .hero-static{display:flex;align-items:flex-end;min-height:100vh;min-height:100svh;padding:calc(var(--nav-h) + 24px) var(--gutter) 56px;position:relative;overflow:hidden;
-    background:var(--panel-2) url("../hero-tinte-ending-m.jpg") 70% 50%/cover no-repeat}
-  [data-theme="dark"] .hero-static{background-image:url("../hero-tinte-ending-m-dark.jpg")}
-  .hs-portrait{display:block;position:absolute;right:-2vw;bottom:0;height:min(78svh,860px);width:auto;max-width:none;pointer-events:none;mix-blend-mode:multiply}
-  [data-theme="dark"] .hs-portrait{mix-blend-mode:normal}
+    background:var(--panel-2) url("../hero-strich-ending-m.jpg") 70% 50%/cover no-repeat}
+  [data-theme="dark"] .hero-static{background-image:url("../hero-strich-ending-m-dark.jpg")}
   .hero-static::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(to top,rgba(var(--scrim-rgb),.94) 0%,rgba(var(--scrim-rgb),.72) 38%,rgba(var(--scrim-rgb),0) 70%)}
   .hs-inner{position:relative;z-index:2;max-width:640px}
   .hs-title{font:800 clamp(44px,12vw,88px)/.92 var(--f-display);letter-spacing:-.03em}
   .hs-hello{font-weight:100}
   .hero-static .sub{max-width:28ch}
-}
-
-/* portrait screens only reach the static hero through reduced motion: portrait on top, copy below */
-@media (orientation: portrait) and (prefers-reduced-motion: reduce){
-  .hs-portrait{top:calc(var(--nav-h) + 8px);bottom:auto;left:50%;right:auto;height:min(50svh,620px);transform:translateX(-50%)}
 }
 
 /* ==========================================================
@@ -576,8 +566,8 @@ body.grid-on .env-grid{background-image:repeating-linear-gradient(90deg,rgba(255
 .foot-theme .theme-btn:hover{border-color:var(--night-text)}
 
 /* ---------- dark hero: the ink becomes white smoke in black water ---------- */
-[data-theme="dark"] #hero-video,[data-theme="dark"] .poster{filter:invert(1)}
-[data-theme="dark"] .settle-portrait{mix-blend-mode:normal}
+/* invert the light paper into dark paper; the hue turn keeps the yellow accent yellow instead of blue */
+[data-theme="dark"] #hero-video,[data-theme="dark"] .poster{filter:invert(1) hue-rotate(180deg)}
 [data-theme="dark"] .env-light{display:none}
 [data-theme="dark"] .contact{box-shadow:0 -1px 0 var(--line)}
 

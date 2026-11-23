@@ -14,11 +14,11 @@
     set(k, v) { try { localStorage.setItem(k, v); } catch (e) { /* private mode */ } }
   };
 
-  const HERO = html.dataset.hero || 'tinte';
+  const HERO = html.dataset.hero || 'strich';
   // two cuts of the same journey: landscape for desktops, a portrait crop for phones and portrait tablets
   const VARIANTS = {
-    d: { video: `assets/hero-${HERO}.mp4`, poster: `assets/hero-${HERO}-poster.jpg`, bytes: Number(html.dataset.bytes) || 8835289 },
-    m: { video: `assets/hero-${HERO}-m.mp4`, poster: `assets/hero-${HERO}-poster-m.jpg`, bytes: Number(html.dataset.bytesM) || 5605607 }
+    d: { video: `assets/hero-${HERO}.mp4`, poster: `assets/hero-${HERO}-poster.jpg`, bytes: Number(html.dataset.bytes) || 9741764 },
+    m: { video: `assets/hero-${HERO}-m.mp4`, poster: `assets/hero-${HERO}-poster-m.jpg`, bytes: Number(html.dataset.bytesM) || 4228526 }
   };
   const RM = matchMedia('(prefers-reduced-motion: reduce)');
 
@@ -238,7 +238,7 @@
   let target = 0, shown = 0, rafId = null, lastTick = 0;
   let loadK = 0, loadStart = 0;
   let seekBusy = false, pendingTime = null;
-  let lastHud = '', lastHudAt = 0, lastScrolled = null, lastFade = -1, lastKp = -1;
+  let lastHud = '', lastHudAt = 0, lastScrolled = null, lastFade = -1;
 
   function heroProgress() {
     const r = hero.getBoundingClientRect();
@@ -282,8 +282,6 @@
     }
     const sc = p > 0.004;
     if (sc !== lastScrolled) { lastScrolled = sc; stage.classList.toggle('scrolled', sc); }
-    const kp = smoothstep(p, 0.82, 0.93);
-    if (Math.abs(kp - lastKp) > 0.006 || ((kp === 0 || kp === 1) && kp !== lastKp)) { lastKp = kp; stage.style.setProperty('--kp', kp.toFixed(3)); }
     const fade = smoothstep(p, 0.9, 1);
     if (Math.abs(fade - lastFade) > 0.01) { lastFade = fade; stage.style.setProperty('--fade', fade.toFixed(3)); }
   }
